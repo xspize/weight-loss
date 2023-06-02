@@ -1,15 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { sendToVercelAnalytics } from './vitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Dashboard from './pages/dashboard';
+import Frontpage from './pages/frontpage';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+      <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/" element={<Frontpage />}>
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
+}
 
-reportWebVitals(sendToVercelAnalytics);
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
