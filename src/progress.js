@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
+import './App.css';
 import CircularProgress, {
   circularProgressClasses,
 } from '@mui/material/CircularProgress';
@@ -8,7 +9,7 @@ import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgr
 
 const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
   height: 15,
-  width: 500,
+  width: 300,
   borderRadius: 5,
   [`&.${linearProgressClasses.colorPrimary}`]: {
     backgroundColor: theme.palette.mode === 'dark' ? 'fffff' : '#ffffff',
