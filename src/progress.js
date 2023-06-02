@@ -48,7 +48,7 @@ export default function CustomizedProgressBars() {
     <Box sx={{ flexGrow: 1 }}>
       <FacebookCircularProgress />
       <br />
-      <BorderLinearProgress variant="determinate" value={1} />
+      <BorderLinearProgress variant="determinate" value={2} />
     </Box>
   );
 }
