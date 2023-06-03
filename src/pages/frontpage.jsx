@@ -20,7 +20,6 @@ function frontpage() {
                     />
           <strong></strong>
           <p> 👻 Goal Weight: 80.7kg 👻</p>
-          <p><Link to="/dashboard">Dashboard</Link></p>
           <Progress />
       </header>
       
